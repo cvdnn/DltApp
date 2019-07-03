@@ -82,4 +82,16 @@ Board.Impl.setStatus(RELAY, ON);
 // 关闭继电器
 Board.Impl.setStatus(RELAY, OFF);
 
+// 模拟长闭型出门开关按钮动作，默认模拟50ms脉冲高电平
+Board.Impl.setStatus(RELAY, ON);
+
+// 带回调接口
+Board.Impl.setStatus(RELAY, ON, 50, new OnHandlePulseListener(){
+
+        @MainThread
+        void onPulsed(Units u, Levers l){
+            // do something
+        }
+    });
+
 ```
