@@ -6,7 +6,7 @@ android {
     defaultConfig {
         minSdkVersion 22
         targetSdkVersion 28
-        versionCode 1
+        versionCode buildVersion()
         versionName "1.0"
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -46,17 +46,27 @@ ext {
 
     bintrayOrg = 'xrj'
     // bintray中创建的package name
-    bintrayName = 'xrj-dlt'
+    bintrayName = 'lib-dlt'
+    bintrayRepo = 'https://bintray.com/ztone/maven/lib-dlt'
 
     libraryName = 'XRJ DLT'
     publishedGroupId = 'com.xrj'
-    artifact = 'xrj-dlt'
+    artifact = 'lib-dlt'
     libraryVersion = android.defaultConfig.versionName
 
     libraryDescription = 'XRJ DLT'
 
+    allLicenses = 'Apache License 2.0'
+
     siteUrl = 'https://github.com/handy001/ZtoneLang'
     gitUrl = 'https://github.com/handy001/ZtoneLang.git'
+
+    developerId = 'xrj_dev'
+    developerName = 'XRJIOT'
+    developerEmail = 'dev@xrjiot.com'
+
+    licenseName = 'Apache License 2.0'
+    licenseUrl = 'https://raw.githubusercontent.com/handy001/DltApp/master/LICENSE'
 }
 
 apply from: 'https://raw.githubusercontent.com/handy001/mvn-repo/master/bintray/pom_build.gradle'
