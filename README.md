@@ -1,5 +1,19 @@
 # `lib_dlt`使用说明
 
+## 零、配置
+
+### 1. allprojects.repositories
+```Gradle
+maven {
+    url 'https://dl.bintray.com/ztone/maven'
+}
+```
+
+### 2. build.gradle:
+```Gradle
+implementation 'com.xrj:lib-dlt:0.3'
+```
+
 ## 一、设备定义
 
 ### 1. 板载资源

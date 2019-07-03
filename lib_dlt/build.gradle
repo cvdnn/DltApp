@@ -7,7 +7,7 @@ android {
         minSdkVersion 22
         targetSdkVersion 28
         versionCode buildVersion()
-        versionName "1.0"
+        versionName "0.3"
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
@@ -44,10 +44,10 @@ ext {
     archiveJavaDocJar = false
     bintrayOverride = true
 
-    bintrayOrg = 'xrj'
+    bintrayOrg = 'ztone'
     // bintray中创建的package name
     bintrayName = 'lib-dlt'
-    bintrayRepo = 'https://bintray.com/ztone/maven/lib-dlt'
+    bintrayRepo = 'maven'
 
     libraryName = 'XRJ DLT'
     publishedGroupId = 'com.xrj'
