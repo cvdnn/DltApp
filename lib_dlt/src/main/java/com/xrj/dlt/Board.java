@@ -23,7 +23,7 @@ import static java.nio.charset.StandardCharsets.UTF_8;
 public class Board {
     private static final String TAG = "Board";
 
-    public static final int DELAY_MILLIS = 50;
+    public static final int DELAY_MILLIS = 300;
 
     public static Board Impl = new Board();
 
